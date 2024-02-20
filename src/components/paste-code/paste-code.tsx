@@ -8,8 +8,6 @@ import './paste-code.scss';
 
 export const PasteCode: FC<{ orgId?: string }> = ({ orgId }) => {
   const { isCopied, copy } = useCopyPasteCode(orgId);
-  console.log('isCopied', isCopied);
-
   return (
     <div className={['paste-code', orgId ? 'paste-code_active_yes' : 'paste-code_active_no'].join(' ')}>
       <span
