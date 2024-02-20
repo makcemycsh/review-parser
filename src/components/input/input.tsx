@@ -23,6 +23,7 @@ export const Input: FC<{ value?: string; placeholder?: string; onChange: (value:
           onChange={handleInput}
           placeholder={placeholder}
           autoFocus
+          maxLength={25}
         />
       </div>
     );
