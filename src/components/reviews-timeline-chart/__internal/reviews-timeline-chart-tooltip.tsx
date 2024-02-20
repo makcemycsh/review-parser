@@ -25,7 +25,7 @@ export const ReviewTimelineChartTooltip: FC<{
   payload?: Array<DataType>;
 }> = ({ payload, label }) => {
   return (
-    !!payload.length && (
+    !!payload?.length && (
       <div className="reviews-timeline-chart-tooltip">
         <div className="reviews-timeline-chart-tooltip__header">
           {label ? new Date(label).toLocaleDateString() : ''}
