@@ -1,0 +1,61 @@
+.map-form {
+  width: 450px;
+  display: flex;
+  flex-direction: column;
+  height: calc(100vh - 200px);
+  max-height: 600px;
+  min-height: 400px;
+
+  &__controls {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 8px;
+  }
+
+  &__control {
+    flex: 1;
+  }
+
+  &__description {
+    white-space: pre-wrap;
+    width: 80%;
+    display: block;
+    margin: 0 auto;
+  }
+
+  &__code {
+    margin: 12px 0;
+    flex: 1;
+    overflow: hidden;
+  }
+
+  &__org-name,
+  &__org-address {
+    white-space: no-wrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+  }
+
+  &__org-address {
+    font-size: 12px;
+  }
+
+  &__org {
+    margin-bottom: 12px;
+  }
+
+  &__spinner {
+    flex: 1;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__review-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}

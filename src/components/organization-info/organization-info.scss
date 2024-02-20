@@ -1,0 +1,20 @@
+.organization-info {
+  display: flex;
+  flex-direction: column;
+
+  &__name,
+  &__address {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+  }
+
+  &__name {
+    font-weight: 600;
+    font-size: 18px;
+  }
+
+  &__address {
+    font-size: 12px;
+  }
+}

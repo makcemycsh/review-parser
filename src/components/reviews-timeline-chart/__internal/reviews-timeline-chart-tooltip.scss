@@ -1,0 +1,44 @@
+.reviews-timeline-chart-tooltip {
+  background: rgb(255, 255, 255);
+  padding: 8px 12px;
+  border-radius: 4px;
+  color: var(--font-color-invert);
+  min-width: 130px;
+  font-size: 10px;
+
+  &__header {
+    text-align: left;
+    margin-bottom: 4px;
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 6px;
+  }
+
+  &__label {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+  }
+
+  &__dot {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: var(--color);
+  }
+
+  &__group + &__group {
+    margin-top: 4px;
+  }
+
+  &__group-header {
+    text-align: left;
+    font-size: 8px;
+    opacity: 0.8;
+  }
+}

@@ -1,0 +1,70 @@
+.paste-code {
+  position: relative;
+  color: var(--font-color-invert);
+  height: 100%;
+
+  &_active_no &__code {
+    color: var(--font-color);
+  }
+
+  &__code {
+    font-size: 10px;
+    white-space: pre;
+    background: #fff;
+    font-family: ui-monospace, 'Cascadia Mono', 'Segoe UI Mono', 'Liberation Mono', Menlo, Monaco, Consolas, monospace;
+    display: block;
+    border-radius: 8px;
+    overflow: auto;
+    width: 100%;
+    padding: 12px;
+    box-sizing: border-box;
+    text-align: left;
+
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+
+    transition: color 0.3s;
+    border: 1px solid #f6f6f6;
+    height: 100%;
+  }
+
+  &__copy {
+    position: absolute;
+    top: 12px;
+    right: 20px;
+
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+
+    opacity: 0.2;
+    transition: opacity 0.3s;
+  }
+
+  &__success {
+    position: absolute;
+    top: 16px;
+    left: 16px;
+    background: #1a9c1a;
+    color: white;
+    padding: 2px 6px 3px;
+    border-radius: 4px;
+    font-size: 10px;
+    user-select: none;
+    transition: 0.3s;
+
+    &_copied_no {
+      opacity: 0;
+      transform: translateX(-5px);
+    }
+
+    &_copied_yes {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+  &:hover &__copy {
+    opacity: 1;
+  }
+}

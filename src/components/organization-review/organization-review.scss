@@ -1,0 +1,25 @@
+.organization-review {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+
+  &__spinner,
+  &__charts {
+    flex: 1 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__charts {
+    gap: 10px;
+    margin: 12px 12px 12px 0;
+  }
+
+  &__chart {
+    flex: 1 0;
+    width: 100%;
+    font-size: 10px;
+  }
+}

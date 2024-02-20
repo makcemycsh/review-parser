@@ -1,0 +1,22 @@
+.reviews-totals-chart-tooltip {
+  background: white;
+  padding: 4px 8px 6px;
+  border-radius: 4px;
+  color: var(--font-color-invert);
+  min-width: 100px;
+  font-size: 10px;
+
+  &__label {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+  }
+
+  &__dot {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: var(--color);
+  }
+}

@@ -10,7 +10,16 @@
   "jsxSingleQuote": false,
   "bracketSameLine": false,
   "plugins": ["@trivago/prettier-plugin-sort-imports"],
-  "importOrder": ["^@core/(.*)$", "^@server/(.*)$", "^@ui/(.*)$", "^(.*).tsx", "^(.*).svg", "^(.*).css"],
+  "importOrder": [
+    "^@core/(.*)$",
+    "^@server/(.*)$",
+    "^@ui/(.*)$",
+    "^../(.*)$",
+    "^(.*)/__internal/(.*)$",
+    "^(.*).tsx",
+    "^(.*).svg",
+    "^(.*).(s)css"
+  ],
   "importOrderSeparation": true,
   "importOrderSortSpecifiers": true
 }
