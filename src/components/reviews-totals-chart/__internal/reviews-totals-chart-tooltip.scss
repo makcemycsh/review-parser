@@ -4,7 +4,7 @@
   border-radius: 4px;
   color: var(--font-color-invert);
   min-width: 100px;
-  font-size: 10px;
+  font-size: 12px;
 
   &__label {
     display: flex;
@@ -14,8 +14,8 @@
   }
 
   &__dot {
-    width: 6px;
-    height: 6px;
+    width: 8px;
+    height: 8px;
     border-radius: 50%;
     background: var(--color);
   }

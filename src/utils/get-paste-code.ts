@@ -2,7 +2,7 @@ export const getPasteCode = (orgId?: string): string => `(() => {
   // ##### ORG_ID #####
   const organizationId = '${orgId || '__YOUR_OTGANIZATION_ID__'}';
 
-  const uiHost = '${window.location.href}';
+  const uiHost = '${window.location.origin}${window.location.pathname}';
   const popup = window.open(\`$\{uiHost}?orgId=$\{organizationId}\`, 'parser');
 
   const yandexHost = 'https://yandex.ru/maps/api/business';

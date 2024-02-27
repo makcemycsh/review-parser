@@ -4,11 +4,12 @@
   border-radius: 4px;
   color: var(--font-color-invert);
   min-width: 130px;
-  font-size: 10px;
+  font-size: 12px;
 
   &__header {
     text-align: left;
     margin-bottom: 4px;
+    font-size: 14px;
   }
 
   &__item {
@@ -26,8 +27,8 @@
   }
 
   &__dot {
-    width: 6px;
-    height: 6px;
+    width: 8px;
+    height: 8px;
     border-radius: 50%;
     background: var(--color);
   }
@@ -38,7 +39,6 @@
 
   &__group-header {
     text-align: left;
-    font-size: 8px;
     opacity: 0.8;
   }
 }

@@ -11,6 +11,8 @@ declare global {
           _data: Organization;
         };
       }>;
+
+      ready: () => Promise<unknown>;
     };
   }
 }
@@ -29,6 +31,7 @@ export const useOrganizationInfo = (orgId?: string) => {
       const fetchOrganization = async () => {
         changeIsLoading(true);
         try {
+          await window.ymaps.ready();
           const { properties } = await window.ymaps.findOrganization(debouncedValue);
           setOrganization(properties._data);
         } catch (_) {

@@ -65,7 +65,7 @@ export const ReviewsTimelineChart: FC<{ reviews?: Array<OrganizationReview> }> =
           tickCount={5}
         />
         <YAxis domain={[0, 'dataMax']} width={30} tickLine={false} tick={{ fill: 'var(--font-color)' }} />
-        <Tooltip content={<ReviewTimelineChartTooltip />} cursor={{ opacity: 0.35 }} position={{ y: -110 }} />
+        <Tooltip content={<ReviewTimelineChartTooltip />} cursor={{ opacity: 0.35 }} position={{ y: -150 }} />
 
         <Area
           dataKey="avg-total"

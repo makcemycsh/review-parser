@@ -39,7 +39,9 @@ export const OrganizationReview: FC<{
   }, [minDate, maxDate]);
 
   const reviewsByDate = useMemo(() => {
-    return reviews.filter(({ updatedTime }) => new Date(updatedTime) <= endDate && new Date(updatedTime) >= startDate);
+    return reviews
+      .filter(({ updatedTime }) => new Date(updatedTime) <= endDate && new Date(updatedTime) >= startDate)
+      .reverse();
   }, [endDate, startDate, reviews]);
 
   const handleDownloadCSV = useCallback(() => {
